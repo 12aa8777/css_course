@@ -8,13 +8,30 @@ body {
     min-height: 100vh;
 }
 
-h1 {
-    border: 2px dashed red;
-    width: 50%;
+.container {
+    border: 2px double red;
+    border-top: 5px solid;
+    border-right: 10px dotted;
+    border-bottom: 15px double;
     font-size: 3rem;
-    padding: 0.5em;
+    margin-top: 1.5em;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 1.5em;
+    padding: 1.5rem 2em 3em 2em;
+    outline: 5px solid green;
+    outline-offset: -10px;
 }
-
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    border: 3px  solid black;
+    border-radius: 50px;
+    margin: 2rem auto;
+    outline: 2px solid palevioletred;
+    outline-offset: 0.25rem;
+}
 main {
     font-size: 2rem;
 }
