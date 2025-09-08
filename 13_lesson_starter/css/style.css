@@ -17,6 +17,7 @@ body {
   width: 75vw;
   height: 85vh;
   margin: 40px auto;
+  position: relative;
 }
 
 .inner-container {
@@ -24,6 +25,7 @@ body {
   width: 40vw;
   height: 50vh;
   margin: 200px auto;
+  position: relative;
 }
 
 .box {
@@ -31,4 +33,75 @@ body {
   height: 150px;
   color: #fff;
   padding: 1rem;
+}
+
+.absolute {
+  position: absolute;
+  background-color: #f00;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+.relative {
+  position: relative;
+  background-color: #0a0;
+  top: 100px;
+  left: 100px;
+}
+.fixed {
+  position: fixed;
+  background-color: #00f;
+  top: 600px;
+  left: 300px;
+}
+.sticky {
+  position: sticky;
+  background-color: #ffa500;
+  top: 0;
+  left: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+}
+
+.blue{background-color: #00f;}
+.red{background-color: #f00;}
+.green{background-color: #0a0;}
+
+header, footer {
+  background-color: #333;
+  color: #fff;
+  height: 100px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  font-size: 5rem;
+}
+footer {
+  background-color: #000;
+  position: sticky;
+  bottom: 0;
+  font-size: 3rem;
+}
+
+a:visited {
+  color: yellow;
+}
+
+.social {
+  background-color: chocolate;
+  color: #000;
+  font-size: inherit;
+  position: fixed;
+  top: 30%;
+  left: 0;
+  z-index: 1;
 }
