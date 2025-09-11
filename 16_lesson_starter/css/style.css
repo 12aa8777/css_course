@@ -1,17 +1,105 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
+/*begin reset*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/*end reset*/
 
+/*utility classes*/
+
+/*end utility classes*/
+
+.nowrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
 body {
   font-family: "Nunito", sans-serif;
   min-height: 100vh;
+  background-color: #15c47e;
+  background-image: linear-gradient(
+    45deg,
+    #15c47e 25%,
+    #f6f20b 25%,
+    #f6f20b 50%,
+    #15c47e 50%,
+    #15c47e 75%,
+    #f6f20b 75%,
+    #f6f20b 100%
+  );
+  background-image: url('../img/bubbles.png');
+  background-repeat: no-repeat, repeat;
+  background-position: right center;
+  background: repeat-y right center url('../img/bubbles.png'), no-repeat linear-gradient(to left, #15c47e, #f6f20b);
+  background-size: auto 80%;
+}
+.container {
+   background-color: #f6f20b;
+  background-image: url('../img/map-2176x1451.png');
+  background-repeat: repeat;
+  background-position: top left;
+  background-size: cover;
+}
+.hero {
+  border-bottom: #15c47e 4px solid;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  background-color: hsla(0, 0%, 70%, 0.408);
 }
 
+.h1 {
+  font-size: 2rem;
+  color: #fdfdfd;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background-color: hsla(0, 0%, 0%, 0.408);
+  /* padding: 0.25rem;
+  border-radius: 10px; */
+}
+.profile-pic-figure {
+  width: 35%;
+}
 
+.profile-pic-figure img {
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+  border: #c70c0c 4px solid;
+  border-radius: 50%;
+}
 
+.example {
+  padding-left: 1rem;
+  border: 2px solid #c70c0c;
+  margin-top: 20px;
+}
 
+.example img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
+.clip{
+  font-weight: 800;
+  font-size: 18rem;
+  text-align: center;
+  background-image: url('../img/scenic-2200x1331.png');
+  background-size: 100%;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  color: transparent;
+
+}
