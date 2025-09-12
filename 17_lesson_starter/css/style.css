@@ -11,4 +11,81 @@
 body {
   font: 1.5rem "Nunito", sans-serif;
   min-height: 100vh;
+  background-color: aquamarine;
+  background-image: radial-gradient(
+    circle at 0% 0%,
+    aquamarine,
+    mediumturquoise,
+    royalblue
+  );
+  display: flex;
+  flex-direction: column
+}
+
+header,nav,main,footer {
+  display: grid;
+  place-content: center;
+}
+
+nav {
+  background-color: rgba(35, 179, 208, 0.597);
+  padding: 1rem;
+  border-bottom: 2px solid black;
+}
+
+main {
+  flex-grow: 1;
+}
+
+header, footer {
+  position: sticky;
+  top: 0;
+  background-color: rgba(208, 35, 35, 0.937);
+  padding: 1rem;
+}
+
+
+
+/* || SMALL */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 1.2rem;
+    background-color: rgb(27, 208, 148);
+    background-image: radial-gradient(
+      circle at 0% 0%,
+      rgb(163, 208, 27),
+      rgb(209, 72, 159),
+      rgb(110, 65, 225)
+    );
+  }
+  
+}
+
+
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 1.2rem;
+    background-color: rgb(27, 208, 148);
+    background-image: radial-gradient(
+      circle at 0% 0%,
+      rgb(221, 4, 4),
+      rgb(17, 197, 44),
+      rgb(115, 57, 99)
+    );
+  }
+  
+}
+
+/* || LARGE */
+@media screen and (max-height: 425px)  and (min-aspect-ratio: 7/4) {
+  body {
+    font-size: 2rem;
+    background-color: rgb(208, 27, 148);
+    background-image: radial-gradient(
+      circle at 0% 0%,
+      rgb(27, 163, 208),
+      rgb(72, 209, 159),
+      rgb(65, 110, 225)
+    );
+  }
 }
